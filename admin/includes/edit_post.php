@@ -49,6 +49,7 @@ if(isset($_GET['p_id'])){
 		$update_post = mysqli_query($connection, $query); 
 
 		confirmQuery($update_post);
+		header("Location: ./posts.php");
 
 	}
 }
