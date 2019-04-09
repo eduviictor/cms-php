@@ -11,8 +11,6 @@ if(isset($_POST['create-user'])){
     $user_password = $_POST['user_password'];
     // $post_date = date('d-m-y');
 
-    print_r($_POST);
-
     // move_uploaded_file($post_image_tmp, "../images/$post_image");
 
     $query = "INSERT INTO users(username, user_password, user_firstname, user_lastname, user_email, user_role) VALUES ('{$username}', '{$user_password}', '{$user_firstname}', '{$user_lastname}', '{$user_email}', '{$user_role}')";
